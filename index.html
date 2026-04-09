@@ -2,22 +2,23 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pagamento da Taxa</title>
 
-<!-- Fonte similar -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 body {
     font-family: 'Inter', sans-serif;
     background: #f5f5f7;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+    margin: 0;
+    padding: 20px;
 }
 
 .container {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -25,6 +26,7 @@ h1 {
     font-weight: 800;
     color: #1d1d1f;
     margin-bottom: 5px;
+    font-size: 22px;
 }
 
 .subtitle {
@@ -37,7 +39,7 @@ h1 {
 .card {
     background: #fff;
     border-radius: 16px;
-    padding: 18px;
+    padding: 16px;
     margin-bottom: 16px;
     border-left: 5px solid #ff007a;
 }
@@ -61,7 +63,7 @@ h1 {
 }
 
 .valor {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 800;
     color: #ff007a;
 }
@@ -78,6 +80,7 @@ ul {
 li {
     margin-bottom: 6px;
     color: #6e6e73;
+    font-size: 14px;
 }
 
 button {
@@ -97,6 +100,21 @@ button {
     font-size: 12px;
     color: #8e8e93;
     margin-top: 8px;
+}
+
+/* MOBILE AJUSTE EXTRA */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .valor {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 14px;
+    }
 }
 </style>
 </head>
@@ -130,7 +148,6 @@ Esta taxa cobre os custos operacionais e de processamento junto aos órgãos de 
 </ul>
 </div>
 
-<!-- LINK EDITÁVEL -->
 <a href="https://pay.limpanomefeiraoiof.shop/VroegN9VpxPGKwj">
 <button>Pagar Taxa Agora</button>
 </a>
